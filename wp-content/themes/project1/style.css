@@ -245,6 +245,118 @@ body {
 }
 /* End Header */
 
+/* Home Header */
+.home-header {
+    margin-bottom: 200px;
+}
+.home-header__inner {
+    background-color: #E7EAF1;
+    padding: 60px 0 40px;
+    min-height: 790px;
+    position: relative;
+}
+.home-header__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.home-header__content {
+    text-align: center;
+    position: relative;
+    width: 1060px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.home-header__subtitle {
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.home-header__subtitle span {
+    color: #28B7CA;
+}
+.home-header__title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    font-family: inherit;
+}
+.home-header__description {
+    font-size: 18px;
+    color: #606060;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+}
+.home-header__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 10px 20px;
+    background-color: #323232;
+    display: inline-block;
+    color: #fff;
+    width: 250px;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+}
+.home-header__link:hover {
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid #000000;
+
+}
+/* End Home Header */
+
+/* Welcome */
+.welcome {
+    background-color: #fff;
+    margin-bottom: 200px;
+}
+.welcome__inner {
+    display: flex;
+}
+.welcome__left {
+    width: 670px;
+    max-width: 100%;
+}
+.welcome__left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.welcome__right {
+    width: 830px;
+    max-width: 100%;
+    padding: 155px 200px 155px 130px;
+}
+.welcome__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    font-family: inherit;
+    margin-bottom: 30px;
+}
+.welcome__title span {
+    color: #22BAC9;
+}
+.welcome__right p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.welcome__arrow-btn  {
+    width: 230px;
+    padding: 10px 0;
+}
+/* End Welcome */
+
+
 
 /* Top Button */
 .top-button {
@@ -513,6 +625,53 @@ body {
     .header {
         margin: 35px 0 40px;
     }
+    .home-header {
+        margin-bottom: 50px;
+    }
+    .home-header__container {
+        padding: 0;
+    }
+    .home-header__inner {
+        padding-top: 20px;
+        min-height: 680px;
+    }
+    .home-header__content {
+        text-align: left;
+        padding: 0 20px;
+    }
+    .home-header__link {
+        width: 100%;
+        text-align: center;
+    }
+    .home-header__subtitle {
+        font-size: 14px;
+    }
+    .home-header__title {
+        font-size: 48px;
+    }
+    .home-header__description {
+        font-size: inherit;
+        margin-bottom: 30px;
+    }
+    .welcome {
+        margin-bottom: 100px;
+    }
+    .welcome__inner {
+        display: block;
+    }
+    .welcome__right {
+        padding: 30px 0 19px;
+    }
+    .welcome__title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+    .welcome__right p {
+        font-size: inherit;
+    }
+
+
     .content {
         margin-bottom: 100px;
     }
