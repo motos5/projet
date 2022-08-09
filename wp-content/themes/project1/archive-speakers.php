@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+* Template name: Speakers Page
+*/
+get_header();
+?>
 
 <main class="main" id="main">
     <section class="archive-content">

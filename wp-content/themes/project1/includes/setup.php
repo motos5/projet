@@ -63,6 +63,14 @@ add_action( 'widgets_init', function() {
     );
 } );
 
+// Register menus
+register_nav_menus(
+	array(
+		'menu-header' => esc_html__( 'Header navigation', 'pro' ),
+		'menu-footer' => esc_html__( 'Footer navigation', 'pro' ),
+	)
+);
+
 function is_active_sidebar_with_content( $sidebar ) {
     $sidebars = wp_get_sidebars_widgets();
     if ( isset( $sidebars[ $sidebar ] ) && ! empty( $sidebars[ $sidebar] ) ) {
