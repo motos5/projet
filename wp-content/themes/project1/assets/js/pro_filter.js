@@ -28,9 +28,6 @@ function pro_get_posts() {
         }
     });
 }
-//pro_get_posts();
-
-// pro_get_posts();
 
 function filter() {
     $('#countries,#positions').change(function (e){
@@ -38,28 +35,4 @@ function filter() {
     }
 )}
 filter();
-
-
-
-
 });
-
-
-
-/*
-$('#country,#position').change(function (e){
-
-    $.ajax({
-        type: "POST",
-        url: '<?php echo admin_url('admin-ajax.php','relative'); ?>',
-        data: {
-            'action': 'filter',
-            'position': $('#position').val(),
-            'country': $('#country').val(),
-        },
-        success: function (response){
-            $('#main').html(response);
-        }
-    });
-});
-*/

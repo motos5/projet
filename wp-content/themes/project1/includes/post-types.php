@@ -9,7 +9,7 @@ function pro_post_types() {
             "label" => esc_html__('Category for Positions', 'pro'),
             "singular_label" => esc_html__('Category for Position', 'pro'),
             'rewrite' => array( 'slug' => 'positions' ), // Slug Taxpnomy
-            "hierarchical" => false,
+            "hierarchical" => true,
         )
     );
     register_taxonomy(
@@ -19,7 +19,7 @@ function pro_post_types() {
             "label" => esc_html__('Category for Countries', 'pro'),
             "singular_label" => esc_html__('Category for Countrie', 'pro'),
             'rewrite' => array( 'slug' => 'countries' ), // Slug Taxpnomy
-            "hierarchical" => false,
+            "hierarchical" => true,
         )
     );
     register_post_type('speakers', array(

@@ -1,5 +1,5 @@
 $(function(){
-// Реализация TABS============================
+// TABS============================
 $('.archive-content__buttons-link').on('click', function(e){
     e.preventDefault();
     $('.archive-content__buttons-link').removeClass('is-active');
@@ -8,5 +8,5 @@ $('.archive-content__buttons-link').on('click', function(e){
     $($(this).attr('href')).addClass('is-active');
     
   });
-// Реализация TABS============================
+// TABS============================
 });

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="container">
             <div class="header__inner">
                 <div class="header__left">
                     <?php
