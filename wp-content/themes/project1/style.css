@@ -95,14 +95,14 @@ body {
 .menu__list {
     display: flex;
 }
-.menu__item {
+.menu__list li {
     font-weight: 600;
     font-size: 14px;
     line-height: 28px;
     margin-right: 42px;
     
 }
-.menu__link {
+.menu__list a {
     color: #323232;
     padding: 5px 4px;
 }
@@ -550,7 +550,7 @@ body {
     margin: 0 auto;
     margin-bottom: 100px;
 }
-.footer .menu__item {
+.footer .menu__list li {
 	font-size: 13px;
 }
 .footer__bottom svg {
@@ -565,7 +565,7 @@ body {
     .header__menu {
         margin-left: 50px;
     }
-    .menu__item {
+    .menu__list li {
         margin-right: 20px;
     }
 }
@@ -791,7 +791,7 @@ body {
         text-align: center;
         margin-bottom: 15px;
     }
-    .footer__menu .menu__item {
+    .footer__menu .menu__list li {
         margin: 0 0 15px;
     }
     .footer__menu .menu__link {

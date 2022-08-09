@@ -18,7 +18,17 @@
                         }
                     ?>
                     <nav class="header__menu menu">
-                        <ul class="menu__list">
+                        <?php
+                            wp_nav_menu( [
+                                'theme_location'  => 'menu-header',
+                                'container'       => '',
+                                'menu_class'      => 'menu__list',
+                                'menu_id'         => '',
+                                'echo'            => true,
+                                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                            ] );
+                        ?>
+                        <!-- <ul class="menu__list">
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Home</a>
                             </li>
@@ -34,7 +44,7 @@
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Contact</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </nav>
                 </div>
                 <div class="header__right">

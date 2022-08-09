@@ -8,7 +8,19 @@
                         }
                     ?>
                     <nav class="footer__menu menu">
-                        <ul class="menu__list">
+                        <?php
+                                wp_nav_menu( [
+                                    'theme_location'  => 'menu-footer',
+                                    'container'       => '',
+                                    'menu_class'      => 'menu__list',
+                                    'menu_id'         => '',
+                                    'echo'            => true,
+                                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                ] );
+                            ?>
+
+
+                        <!-- <ul class="menu__list">
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Home</a>
                             </li>
@@ -24,7 +36,7 @@
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Contact</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </nav>
                     <a class="arrow-btn footer__btn" href="#">
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

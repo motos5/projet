@@ -7,9 +7,9 @@ function pro_setup() {
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
     add_image_size( 'speakers_archive', 180, 180, true );
+    add_image_size('home_header_bg', 1500, 9999, false);
     // add_image_size( 'vertical_testimonial', 225, 332, true );
     // add_image_size( 'thumbnails_feature', 438, 455, true );
-    // add_image_size('news-thumb', 733, 9999, false);
 
     add_theme_support(
         'html5',
